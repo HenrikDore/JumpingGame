@@ -1,0 +1,6 @@
+framework module Pods_TheGameDummyProject {
+  umbrella header "Pods-TheGameDummyProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
