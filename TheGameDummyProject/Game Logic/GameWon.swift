@@ -68,10 +68,6 @@ class gameWonScene : SKScene {
     
     func getHighScoreFromFirebase(score: Int ,name: String){
         
-        //denna metoden?
-        
-        // jaa eller kolla här
-       
         
         /*ref.child("players/"/* + name + "/score"*/).observeSingleEvent(of: .value) { (snapshot) in
             if snapshot.childrenCount > 0{

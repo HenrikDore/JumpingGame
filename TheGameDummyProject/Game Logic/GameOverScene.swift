@@ -37,7 +37,7 @@ class GameOverScene: SKScene {
         
     }
     
-    //Är det här i som du vill spara till Firebase?
+    
     
     
     /*
