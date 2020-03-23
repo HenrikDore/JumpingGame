@@ -38,6 +38,7 @@ class GameScene: SKScene {
 
 
 
+
     override func didMove(to view: SKView) {
         physicsWorld.contactDelegate = self
         setCollisions()
@@ -47,7 +48,7 @@ class GameScene: SKScene {
         joystick = childNode(withName: "joystick")
         joystickKnob = joystick?.childNode(withName: "knob")
         cameraNode = childNode(withName: "cameraNode") as? SKCameraNode
-        player?.position = CGPoint(x: -40 , y: -200 )
+        player?.position = CGPoint(x: 0 , y: 0 )
         
         /*Timer.scheduledTimer(withTimeInterval: 3, repeats: true){(timer) in
             self.spawnAirplane()
@@ -297,6 +298,7 @@ extension GameScene: SKPhysicsContactDelegate{
             borderBody.contactTestBitMask = playerCategory | finishLineCategory
             borderBody.categoryBitMask = wallCategory
             borderBody.collisionBitMask = playerCategory | finishLineCategory
+            
         }
     }
 
